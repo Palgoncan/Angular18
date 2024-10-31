@@ -1,1 +1,13 @@
-<p>about works!</p>
+@if(edad()>=18){
+<div style="background-color: green;">Mayor de edad</div>
+}@else {
+<div style="background-color: red;">Menor de edad</div>
+}
+
+{{precio()==0?'Gratis':precio()+' €'}}
+
+@if(precio()==0){
+Gratis
+}@else{
+{{precio()}}€
+}
